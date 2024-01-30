@@ -1,6 +1,7 @@
 html, body {
   font-size: 20px;
   font-family: "Lato", sans-serif;
+  color: #424551;
 }
 
 .wrapper {
@@ -16,14 +17,23 @@ html, body {
 }
 
 .button {
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  font-weight: 700px;
+  padding: 0 40px;
+  color: #fff;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  white-space: nowrap;
 }
 
 .logo {
 }
 
-/* -------------------- */
+/* --------------------------------------- */
 
 .header {
+  font-weight: 700px;
 }
 
 .header__top {
@@ -33,6 +43,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0
 }
 
 .header__logo {
@@ -40,6 +51,10 @@ html, body {
 
 .header__nav {
   margin-right: auto;
+}
+
+.header__user-btn {
+  white-space: nowrap;
 }
 
 .header__nav-list {
@@ -50,10 +65,45 @@ html, body {
   margin-right: 40px;
 }
 
+.header__nav-link {
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.header__nav-link:hover { 
+  color: #FF3F3A;
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
+
 .header__nav-item:last-child{
   margin-right: 0px;
 }
 
+.header__user-nav {
+  display: flex;
+  position: relative;
+  padding-left: 28px;
+}
+
+.header__user-nav::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../images/icons/user-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 .header__logo {
   margin-right: 60px;
+}
+
+.header__top-button {
+  margin-right: 36px;
 }
